@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_gradient"
+    android:visibility="visible"
+    tools:context=".register">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="302dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/techlogo"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/reginpEmail"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="#3C3A3A"
+        android:textColorHint="#605F5F"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/reginpname"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="#3C3A3A"
+        android:textColorHint="#605F5F"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reginpEmail" />
+
+    <EditText
+        android:id="@+id/reginpPassword"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="#3C3A3A"
+        android:textColorHint="#605F5F"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reginpname" />
+
+    <EditText
+        android:id="@+id/reginpRepassword"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Re Enter Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="#3C3A3A"
+        android:textColorHint="#605F5F"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reginpPassword" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="322dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/buttonround"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reginpRepassword"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginBottom="28dp"
+        android:background="#4DFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="302dp"
+        android:layout_height="42dp"
+
+        android:layout_marginStart="24dp"
+        android:background="#0FF0ECEC"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="Eventware"
+        android:textAlignment="center"
+        android:textColor="#3C3A3A"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <RadioGroup
+        android:id="@+id/rbtn_group"
+        android:layout_width="374dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/rbtn_eventmangerset"
+        app:layout_constraintEnd_toStartOf="@+id/btnSignup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.6">
+
+        <RadioButton
+            android:id="@+id/rbtn_participants"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#605F5F"
+            android:text="Participant"
+            android:textColor="#3C3A3A"
+            android:textColorHighlight="#4E46C2"
+            android:textColorLink="#4E46C2" />
+
+        <RadioButton
+            android:id="@+id/rbtn_eventmang"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:buttonTint="#605F5F"
+            android:text="Event Manager"
+            android:textColor="#3C3A3A"
+            android:textColorLink="#4E46C2" />
+
+        <RadioButton
+            android:id="@+id/rbtn_sponsors"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#605F5F"
+            android:text="Sponsors"
+            android:textColor="#3C3A3A"
+            android:textColorLink="#4E46C2"
+            app:useMaterialThemeColors="true" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rbtn_eventmangerset"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginBottom="20dp"
+        android:animationCache="true"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/regredbtnhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#605F5F"
+            android:text="Heads"
+            android:textColor="#3C3A3A"
+            android:textColorLink="#4E46C2" />
+
+        <RadioButton
+            android:id="@+id/regredbtnname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#605F5F"
+            android:text="Mentors"
+            android:textColor="#3C3A3A"
+            android:textColorLink="#4E46C2" />
+
+        <RadioButton
+            android:id="@+id/regredbtnexec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#605F5F"
+            android:text="Executives"
+            android:textColor="#3C3A3A"
+            android:textColorLink="#4E46C2" />
+
+        <RadioButton
+            android:id="@+id/regredbtnamb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#605F5F"
+            android:text="Ambassadors"
+            android:textColor="#3C3A3A"
+            android:textColorLink="#4E46C2" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="1dp"
+        android:layout_height="380dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="@+id/btnSignup"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toStartOf="@+id/btnSignup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

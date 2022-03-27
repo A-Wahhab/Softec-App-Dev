@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_card"
+    android:layout_width="match_parent"
+    android:layout_height="320dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/scene"
+            android:layout_width="385dp"
+            android:layout_height="220dp"
+            android:background="@drawable/ic_launcher_background"
+            android:foreground="@drawable/ic_launcher_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:filterTouchesWhenObscured="true"
+            android:text="SOFTEC"
+            android:textColor="#150A0A"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/scene"
+            app:layout_constraintTop_toBottomOf="@+id/scene"
+            app:layout_constraintVertical_bias="0.147" />
+
+        <TextView
+            android:id="@+id/event_venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAST"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/event_name"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/event_name"
+            app:layout_constraintTop_toBottomOf="@+id/event_name" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/sdate"
+            app:layout_constraintEnd_toStartOf="@+id/sdate"
+            app:layout_constraintStart_toEndOf="@+id/event_name"
+            app:layout_constraintTop_toTopOf="@+id/sdate" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/edate"
+            app:layout_constraintEnd_toStartOf="@+id/edate"
+            app:layout_constraintStart_toEndOf="@+id/event_name"
+            app:layout_constraintTop_toBottomOf="@+id/sdate" />
+
+        <TextView
+            android:id="@+id/sdate"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="27/03/2022"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/scene"
+            app:layout_constraintTop_toTopOf="@+id/event_name" />
+
+        <TextView
+            android:id="@+id/edate"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="27/03/2022"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/sdate"
+            app:layout_constraintTop_toBottomOf="@+id/sdate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

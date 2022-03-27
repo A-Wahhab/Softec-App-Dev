@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_gradient"
+    tools:context=".Organizerscreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/orgName"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="#3C3A3A"
+                android:textColorHint="#605F5F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/orgEdate"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="End Date"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="#3C3A3A"
+                android:textColorHint="#605F5F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/orgVenue"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="venue"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="#3C3A3A"
+                android:textColorHint="#605F5F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/orgSdate"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Start Date"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="#3C3A3A"
+                android:textColorHint="#605F5F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="355dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="15dp"
+                android:text="Eligibility"
+                android:textColor="#3C3A3A"
+                android:textColorHint="#605F5F"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eligDegree"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Degree"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="#3C3A3A"
+                android:textColorHint="#605F5F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/elegAge"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Age"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="#3C3A3A"
+                android:textColorHint="#605F5F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/elegsem"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="semester"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="#3C3A3A"
+                android:textColorHint="#605F5F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnproceed"
+                android:layout_width="209dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="24dp"
+                android:text="Proceed" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="112dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="8dp"
+                android:text="Add Event" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
